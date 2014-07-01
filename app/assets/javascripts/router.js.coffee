@@ -4,4 +4,6 @@ App.Router.map ()->
   App.Router.reopen
     location: 'auto'
     rootURL: '/'
+  @resource 'locations', path: '/', ->
+    @resource 'location', path: '/locations/:id'
 

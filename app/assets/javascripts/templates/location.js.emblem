@@ -1,0 +1,6 @@
+article.location
+  h1= model.title
+  p= model.address
+  p= model.lat
+  p= model.lng
+  p= model.comment

@@ -1,1 +1,11 @@
-h1 Welcome to the Ember Location App
+header.navbar.navbar-static-top
+  .container
+    .navbar-header
+      h3
+        a href="/" Ember Locations
+App.MapView contentBinding="this"
+  #map
+.container
+  = outlet
+
+footer
