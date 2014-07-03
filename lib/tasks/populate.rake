@@ -3,7 +3,7 @@ namespace :db do
 
     Location.destroy_all
 
-    20.times do
+    25.times do
       Location.create(
         title: Faker::Address.city,
         address: Faker::Address.street_address,

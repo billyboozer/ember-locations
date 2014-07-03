@@ -4,3 +4,7 @@ App.Location = DS.Model.extend
   lat: DS.attr('number')
   lng: DS.attr('number')
   comment: DS.attr('string')
+  latlng: (->
+    @get("lat") + ", " + @get("lng")
+  ).property("lat", "lng")
+

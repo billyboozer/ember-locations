@@ -1,9 +1,0 @@
-.col-md-3
-  h1 Location
-  ul
-    each location in controller
-        link-to 'location' location tagName="li"
-          location.title
-        .js-location data-lat=location.lat data-lng=location.lng
-.col-md-9
-  outlet
