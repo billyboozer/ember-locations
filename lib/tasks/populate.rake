@@ -1,8 +1,6 @@
 namespace :db do
   task populate: :environment do
 
-    Location.destroy_all
-
     25.times do
       Location.create(
         title: Faker::Address.city,
